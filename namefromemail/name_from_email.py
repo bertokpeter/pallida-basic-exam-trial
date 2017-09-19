@@ -7,7 +7,10 @@
 
 def name_from_email(email_address):
     last_name = ""
-    first_name = ""
     user_name = ""
-    
+    # if not "@" in email_address:
+    #     print
+    dot = email_address.find(".")
+    first_name = "" + email_address[:dot]
+    return first_name
 print(name_from_email("elek.viz@exam.com"))
