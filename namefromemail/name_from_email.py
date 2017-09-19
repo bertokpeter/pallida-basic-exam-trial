@@ -18,6 +18,7 @@ def name_from_email(email_address):
             return "Make sure you added your email address in the correct format"
         else:
             return user_name
+        
 def capitalizer(name):
     name = name.capitalize()
     return name
