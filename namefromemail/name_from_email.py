@@ -6,13 +6,14 @@
 # accents does not matter
 
 def name_from_email(email_address):
-    last_name = ""
-    user_name = ""
     # if not "@" in email_address:
     #     print
     dot = email_address.find(".")
+    at = email_address.find("@")
     first_name = "" + email_address[:dot]
-    return first_name
+    last_name = "" + email_address[dot + 1:at]
+    user_name = "" + capitalizer(last_name) + " " + capitalizer(first_name)
+    return user_name
 def capitalizer(name):
     name = name.capitalize()
     return name
