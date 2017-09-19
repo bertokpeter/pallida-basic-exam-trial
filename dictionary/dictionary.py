@@ -8,7 +8,9 @@ dictionary = [
 
 
 def add_word(hun_word, eng_word):
-    pass
+    dictionary.append({hun_word: eng_word})
+    return dictionary
+print(add_word("asztal", "table"))
 
 # Implement these methods. They should return the translation of the given
 # word form the list 'dictionary'
