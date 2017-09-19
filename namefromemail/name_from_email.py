@@ -14,7 +14,10 @@ def name_from_email(email_address):
         first_name = "" + email_address[:dot]
         last_name = "" + email_address[dot + 1:at]
         user_name = "" + capitalizer(last_name) + " " + capitalizer(first_name)
-        return user_name
+        if "@exam" in user_name:
+            return "Make sure you added your email address in the correct format"
+        else:
+            return user_name
 def capitalizer(name):
     name = name.capitalize()
     return name
