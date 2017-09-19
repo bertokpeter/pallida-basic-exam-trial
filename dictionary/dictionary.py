@@ -18,8 +18,8 @@ print(add_word("asztal", "table"))
 
 def translate_to_hun(eng_word):
     for i in dictionary:
-        for k, v in i:
-            if v == eng_word:
+        for k in i:
+            if i[k] == eng_word:
                 return k
 print(translate_to_hun("tree"))
 def translate_to_eng(hun_word):
