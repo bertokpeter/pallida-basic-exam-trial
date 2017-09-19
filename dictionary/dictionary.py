@@ -19,6 +19,8 @@ print(add_word("asztal", "table"))
 def translate_to_hun(eng_word):
     pass
 
-
 def translate_to_eng(hun_word):
-    pass
+    for i in dictionary:
+        if hun_word in i:
+            return (i[hun_word])
+print(translate_to_eng("alma"))
