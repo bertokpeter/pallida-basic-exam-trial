@@ -5,4 +5,9 @@
 # example: "elek.viz@exam.com" for this input the output should be: "Viz Elek"
 # accents does not matter
 
+def name_from_email(email_address):
+    last_name = ""
+    first_name = ""
+    user_name = ""
+    
 print(name_from_email("elek.viz@exam.com"))
