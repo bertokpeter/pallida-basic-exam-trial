@@ -7,4 +7,5 @@ def odd_filter(list):
     for i in list:
         if i%2 == 1:
             odd_list.append(i)
-print(odd_filter([1, 2, 3, 4, 5]))  # should print [1, 3, 5]
+    return odd_list
+print(odd_filter([1, 2, 3, 4, 5, 66, 83, 98, 101]))  # should print [1, 3, 5]
