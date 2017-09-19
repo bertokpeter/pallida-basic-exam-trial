@@ -13,4 +13,7 @@ def name_from_email(email_address):
     dot = email_address.find(".")
     first_name = "" + email_address[:dot]
     return first_name
+def capitalizer(name):
+    name = name.capitalize()
+    return name
 print(name_from_email("elek.viz@exam.com"))
